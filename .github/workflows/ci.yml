@@ -36,4 +36,5 @@ jobs:
         run: test -z $(go fmt ./...)
 
       - name: gosec
+        uses: securego/gosec@master
         run: gosec ./...
